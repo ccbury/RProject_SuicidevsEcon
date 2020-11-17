@@ -1,0 +1,32 @@
+{
+    "id": "927BAB05",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1605641892744.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "selfIncomeCases.combined",
+        "caption": "selfIncomeCases.combined",
+        "totalObservations": 100,
+        "displayedObservations": 100,
+        "variables": 6,
+        "cacheKey": "B8FD7606",
+        "object": "selfIncomeCases.combined",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=selfIncomeCases.combined&cache_key=B8FD7606&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7167589996757870962,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605641892744,
+    "read_only": false,
+    "read_only_alternatives": []
+}

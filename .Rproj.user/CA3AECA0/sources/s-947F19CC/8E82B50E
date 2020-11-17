@@ -1,0 +1,32 @@
+{
+    "id": "8E82B50E",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1605645746491.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "expression": "structure(list(Area = c(\"State\", \"Northern and Western\", \"Border\",  \"Leitrim\", \"Sligo\", \"Cavan\", \"Donegal\", \"Monaghan\", \"West\", \"Galway\",  \"Mayo\", \"Roscommon\", \"Southern\", \"Mid-West\", \"Clare\", \"Limerick\",  \"Tipperary\", \"South-East\", \"Carlow\", \"Kilkenny\", \"Wexford\", \"Waterford\",  \"South-West\", \"Cork\", \"Kerry\", \"Eastern and Midland\", \"Dublin\",  \"Mid-East\", \"Kildare\", \"Louth\", \"Meath\", \"Wicklow\", \"Midland\",  \"Laois\", \"Longford\", \"Offaly\", \"Westmeath\"), Type = c(\"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\",  \"Primary Income (Euro Million)\", \"Primary Income (Euro Million)\" ), `2013` = c(90175, 12872, 5546, 501, 1094, 1151, 1929, 870,  7327, 4386, 1971, 970, 28231, 8718, 1973, 3913, 2832, 6791, 883,  1725, 2249, 1935, 12723, 10474, 2249, 49072, 31828, 12787, 4408,  1989, 3708, 2682, 4457, 1397, 561, 1124, 1375), `2014` = c(94414,  13419, 5777, 515, 1118, 1211, 1995, 938, 7642, 4564, 2059, 1019,  29511, 8943, 2051, 4078, 2814, 7335, 949, 1813, 2452, 2121, 13233,  10814, 2419, 51484, 33482, 13431, 4636, 2061, 3913, 2821, 4571,  1416, 565, 1163, 1427), `2015` = c(99987, 14084, 6187, 541, 1180,  1300, 2133, 1033, 7897, 4769, 2088, 1040, 30938, 9350, 2163,  4238, 2949, 7913, 1059, 1956, 2659, 2238, 13675, 11134, 2541,  54965, 35612, 14532, 5039, 2213, 4223, 3058, 4820, 1455, 614,  1225, 1525), `2016` = c(105785, 14760, 6302, 544, 1177, 1331,  2175, 1076, 8458, 5144, 2205, 1109, 32590, 10024, 2339, 4722,  2963, 7809, 1039, 1936, 2607, 2228, 14757, 12113, 2643, 58436,  37868, 15584, 5495, 2356, 4484, 3249, 4983, 1518, 621, 1268,  1577), `2017` = c(113523, 15698, 6768, 588, 1260, 1419, 2360,  1142, 8930, 5398, 2355, 1177, 34412, 10781, 2510, 5046, 3225,  8011, 1044, 1997, 2685, 2285, 15619, 12809, 2810, 63412, 39694,  17369, 6200, 2580, 4994, 3595, 6350, 1971, 768, 1599, 2011)), row.names = c(5L,  20L, 35L, 50L, 65L, 80L, 95L, 110L, 125L, 140L, 155L, 170L, 185L,  200L, 215L, 230L, 245L, 260L, 275L, 290L, 305L, 320L, 335L, 350L,  365L, 380L, 395L, 410L, 425L, 440L, 455L, 470L, 485L, 500L, 515L,  530L, 545L), class = \"data.frame\")",
+        "caption": "incomeSelfEmployed",
+        "totalObservations": 37,
+        "displayedObservations": 37,
+        "variables": 7,
+        "cacheKey": "AD22FE67",
+        "object": "",
+        "environment": "_rs_no_env",
+        "contentUrl": "grid_resource/gridviewer.html?env=_rs_no_env&obj=&cache_key=AD22FE67&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 733013814374053944,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605645746491,
+    "read_only": false,
+    "read_only_alternatives": []
+}

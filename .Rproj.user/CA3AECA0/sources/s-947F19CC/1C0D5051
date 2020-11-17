@@ -1,0 +1,32 @@
+{
+    "id": "1C0D5051",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1605641892976.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "expression": "selfIncomeCases",
+        "caption": "selfIncomeCases",
+        "totalObservations": 105,
+        "displayedObservations": 105,
+        "variables": 5,
+        "cacheKey": "6EB5C60F",
+        "object": "selfIncomeCases",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=selfIncomeCases&cache_key=6EB5C60F&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 3182181700050427948,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605641892976,
+    "read_only": false,
+    "read_only_alternatives": []
+}

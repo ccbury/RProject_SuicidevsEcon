@@ -1,0 +1,988 @@
+Cases,Area,Year,Sex
+487,State,2013,Both sexes
+391,State,2013,Male
+96,State,2013,Female
+486,State,2014,Both sexes
+399,State,2014,Male
+87,State,2014,Female
+425,State,2015,Both sexes
+335,State,2015,Male
+90,State,2015,Female
+437,State,2016,Both sexes
+350,State,2016,Male
+87,State,2016,Female
+383,State,2017,Both sexes
+310,State,2017,Male
+73,State,2017,Female
+437,State,2018,Both sexes
+327,State,2018,Male
+110,State,2018,Female
+421,State,2019,Both sexes
+317,State,2019,Male
+104,State,2019,Female
+227,Leinster,2013,Both sexes
+180,Leinster,2013,Male
+47,Leinster,2013,Female
+218,Leinster,2014,Both sexes
+180,Leinster,2014,Male
+38,Leinster,2014,Female
+183,Leinster,2015,Both sexes
+143,Leinster,2015,Male
+40,Leinster,2015,Female
+182,Leinster,2016,Both sexes
+144,Leinster,2016,Male
+38,Leinster,2016,Female
+160,Leinster,2017,Both sexes
+127,Leinster,2017,Male
+33,Leinster,2017,Female
+176,Leinster,2018,Both sexes
+126,Leinster,2018,Male
+50,Leinster,2018,Female
+168,Leinster,2019,Both sexes
+123,Leinster,2019,Male
+45,Leinster,2019,Female
+13,Carlow,2013,Both sexes
+8,Carlow,2013,Male
+5,Carlow,2013,Female
+9,Carlow,2014,Both sexes
+5,Carlow,2014,Male
+4,Carlow,2014,Female
+6,Carlow,2015,Both sexes
+4,Carlow,2015,Male
+2,Carlow,2015,Female
+9,Carlow,2016,Both sexes
+8,Carlow,2016,Male
+1,Carlow,2016,Female
+8,Carlow,2017,Both sexes
+5,Carlow,2017,Male
+3,Carlow,2017,Female
+5,Carlow,2018,Both sexes
+3,Carlow,2018,Male
+2,Carlow,2018,Female
+3,Carlow,2019,Both sexes
+0,Carlow,2019,Male
+3,Carlow,2019,Female
+45,Dublin City,2013,Both sexes
+35,Dublin City,2013,Male
+10,Dublin City,2013,Female
+40,Dublin City,2014,Both sexes
+32,Dublin City,2014,Male
+8,Dublin City,2014,Female
+29,Dublin City,2015,Both sexes
+21,Dublin City,2015,Male
+8,Dublin City,2015,Female
+22,Dublin City,2016,Both sexes
+12,Dublin City,2016,Male
+10,Dublin City,2016,Female
+24,Dublin City,2017,Both sexes
+16,Dublin City,2017,Male
+8,Dublin City,2017,Female
+15,Dublin City,2018,Both sexes
+12,Dublin City,2018,Male
+3,Dublin City,2018,Female
+17,Dublin City,2019,Both sexes
+14,Dublin City,2019,Male
+3,Dublin City,2019,Female
+23,South Dublin,2013,Both sexes
+16,South Dublin,2013,Male
+7,South Dublin,2013,Female
+22,South Dublin,2014,Both sexes
+16,South Dublin,2014,Male
+6,South Dublin,2014,Female
+10,South Dublin,2015,Both sexes
+8,South Dublin,2015,Male
+2,South Dublin,2015,Female
+12,South Dublin,2016,Both sexes
+8,South Dublin,2016,Male
+4,South Dublin,2016,Female
+8,South Dublin,2017,Both sexes
+4,South Dublin,2017,Male
+4,South Dublin,2017,Female
+12,South Dublin,2018,Both sexes
+4,South Dublin,2018,Male
+8,South Dublin,2018,Female
+11,South Dublin,2019,Both sexes
+3,South Dublin,2019,Male
+8,South Dublin,2019,Female
+16,Fingal,2013,Both sexes
+12,Fingal,2013,Male
+4,Fingal,2013,Female
+11,Fingal,2014,Both sexes
+9,Fingal,2014,Male
+2,Fingal,2014,Female
+11,Fingal,2015,Both sexes
+11,Fingal,2015,Male
+0,Fingal,2015,Female
+11,Fingal,2016,Both sexes
+8,Fingal,2016,Male
+3,Fingal,2016,Female
+7,Fingal,2017,Both sexes
+6,Fingal,2017,Male
+1,Fingal,2017,Female
+14,Fingal,2018,Both sexes
+10,Fingal,2018,Male
+4,Fingal,2018,Female
+12,Fingal,2019,Both sexes
+9,Fingal,2019,Male
+3,Fingal,2019,Female
+17,Dun Laoghaire-Rathdown,2013,Both sexes
+12,Dun Laoghaire-Rathdown,2013,Male
+5,Dun Laoghaire-Rathdown,2013,Female
+7,Dun Laoghaire-Rathdown,2014,Both sexes
+7,Dun Laoghaire-Rathdown,2014,Male
+0,Dun Laoghaire-Rathdown,2014,Female
+1,Dun Laoghaire-Rathdown,2015,Both sexes
+1,Dun Laoghaire-Rathdown,2015,Male
+0,Dun Laoghaire-Rathdown,2015,Female
+8,Dun Laoghaire-Rathdown,2016,Both sexes
+5,Dun Laoghaire-Rathdown,2016,Male
+3,Dun Laoghaire-Rathdown,2016,Female
+5,Dun Laoghaire-Rathdown,2017,Both sexes
+5,Dun Laoghaire-Rathdown,2017,Male
+0,Dun Laoghaire-Rathdown,2017,Female
+6,Dun Laoghaire-Rathdown,2018,Both sexes
+6,Dun Laoghaire-Rathdown,2018,Male
+0,Dun Laoghaire-Rathdown,2018,Female
+7,Dun Laoghaire-Rathdown,2019,Both sexes
+7,Dun Laoghaire-Rathdown,2019,Male
+0,Dun Laoghaire-Rathdown,2019,Female
+24,Kildare,2013,Both sexes
+22,Kildare,2013,Male
+2,Kildare,2013,Female
+28,Kildare,2014,Both sexes
+26,Kildare,2014,Male
+2,Kildare,2014,Female
+20,Kildare,2015,Both sexes
+16,Kildare,2015,Male
+4,Kildare,2015,Female
+23,Kildare,2016,Both sexes
+19,Kildare,2016,Male
+4,Kildare,2016,Female
+17,Kildare,2017,Both sexes
+13,Kildare,2017,Male
+4,Kildare,2017,Female
+21,Kildare,2018,Both sexes
+16,Kildare,2018,Male
+5,Kildare,2018,Female
+21,Kildare,2019,Both sexes
+17,Kildare,2019,Male
+4,Kildare,2019,Female
+8,Kilkenny,2013,Both sexes
+7,Kilkenny,2013,Male
+1,Kilkenny,2013,Female
+12,Kilkenny,2014,Both sexes
+8,Kilkenny,2014,Male
+4,Kilkenny,2014,Female
+13,Kilkenny,2015,Both sexes
+8,Kilkenny,2015,Male
+5,Kilkenny,2015,Female
+11,Kilkenny,2016,Both sexes
+10,Kilkenny,2016,Male
+1,Kilkenny,2016,Female
+9,Kilkenny,2017,Both sexes
+8,Kilkenny,2017,Male
+1,Kilkenny,2017,Female
+10,Kilkenny,2018,Both sexes
+8,Kilkenny,2018,Male
+2,Kilkenny,2018,Female
+10,Kilkenny,2019,Both sexes
+8,Kilkenny,2019,Male
+2,Kilkenny,2019,Female
+7,Laois,2013,Both sexes
+5,Laois,2013,Male
+2,Laois,2013,Female
+3,Laois,2014,Both sexes
+2,Laois,2014,Male
+1,Laois,2014,Female
+9,Laois,2015,Both sexes
+7,Laois,2015,Male
+2,Laois,2015,Female
+10,Laois,2016,Both sexes
+9,Laois,2016,Male
+1,Laois,2016,Female
+9,Laois,2017,Both sexes
+7,Laois,2017,Male
+2,Laois,2017,Female
+6,Laois,2018,Both sexes
+5,Laois,2018,Male
+1,Laois,2018,Female
+6,Laois,2019,Both sexes
+5,Laois,2019,Male
+1,Laois,2019,Female
+6,Longford,2013,Both sexes
+5,Longford,2013,Male
+1,Longford,2013,Female
+4,Longford,2014,Both sexes
+4,Longford,2014,Male
+0,Longford,2014,Female
+4,Longford,2015,Both sexes
+4,Longford,2015,Male
+0,Longford,2015,Female
+4,Longford,2016,Both sexes
+3,Longford,2016,Male
+1,Longford,2016,Female
+2,Longford,2017,Both sexes
+1,Longford,2017,Male
+1,Longford,2017,Female
+2,Longford,2018,Both sexes
+2,Longford,2018,Male
+0,Longford,2018,Female
+2,Longford,2019,Both sexes
+2,Longford,2019,Male
+0,Longford,2019,Female
+12,Louth,2013,Both sexes
+10,Louth,2013,Male
+2,Louth,2013,Female
+11,Louth,2014,Both sexes
+8,Louth,2014,Male
+3,Louth,2014,Female
+10,Louth,2015,Both sexes
+8,Louth,2015,Male
+2,Louth,2015,Female
+10,Louth,2016,Both sexes
+9,Louth,2016,Male
+1,Louth,2016,Female
+11,Louth,2017,Both sexes
+10,Louth,2017,Male
+1,Louth,2017,Female
+10,Louth,2018,Both sexes
+8,Louth,2018,Male
+2,Louth,2018,Female
+11,Louth,2019,Both sexes
+9,Louth,2019,Male
+2,Louth,2019,Female
+17,Meath,2013,Both sexes
+13,Meath,2013,Male
+4,Meath,2013,Female
+17,Meath,2014,Both sexes
+15,Meath,2014,Male
+2,Meath,2014,Female
+22,Meath,2015,Both sexes
+15,Meath,2015,Male
+7,Meath,2015,Female
+13,Meath,2016,Both sexes
+12,Meath,2016,Male
+1,Meath,2016,Female
+17,Meath,2017,Both sexes
+15,Meath,2017,Male
+2,Meath,2017,Female
+21,Meath,2018,Both sexes
+14,Meath,2018,Male
+7,Meath,2018,Female
+21,Meath,2019,Both sexes
+14,Meath,2019,Male
+7,Meath,2019,Female
+7,Offaly,2013,Both sexes
+7,Offaly,2013,Male
+0,Offaly,2013,Female
+8,Offaly,2014,Both sexes
+8,Offaly,2014,Male
+0,Offaly,2014,Female
+8,Offaly,2015,Both sexes
+8,Offaly,2015,Male
+0,Offaly,2015,Female
+11,Offaly,2016,Both sexes
+10,Offaly,2016,Male
+1,Offaly,2016,Female
+8,Offaly,2017,Both sexes
+6,Offaly,2017,Male
+2,Offaly,2017,Female
+11,Offaly,2018,Both sexes
+9,Offaly,2018,Male
+2,Offaly,2018,Female
+8,Offaly,2019,Both sexes
+5,Offaly,2019,Male
+3,Offaly,2019,Female
+9,Westmeath,2013,Both sexes
+9,Westmeath,2013,Male
+0,Westmeath,2013,Female
+7,Westmeath,2014,Both sexes
+7,Westmeath,2014,Male
+0,Westmeath,2014,Female
+6,Westmeath,2015,Both sexes
+4,Westmeath,2015,Male
+2,Westmeath,2015,Female
+13,Westmeath,2016,Both sexes
+10,Westmeath,2016,Male
+3,Westmeath,2016,Female
+6,Westmeath,2017,Both sexes
+5,Westmeath,2017,Male
+1,Westmeath,2017,Female
+10,Westmeath,2018,Both sexes
+8,Westmeath,2018,Male
+2,Westmeath,2018,Female
+7,Westmeath,2019,Both sexes
+5,Westmeath,2019,Male
+2,Westmeath,2019,Female
+16,Wexford,2013,Both sexes
+13,Wexford,2013,Male
+3,Wexford,2013,Female
+26,Wexford,2014,Both sexes
+22,Wexford,2014,Male
+4,Wexford,2014,Female
+18,Wexford,2015,Both sexes
+15,Wexford,2015,Male
+3,Wexford,2015,Female
+16,Wexford,2016,Both sexes
+14,Wexford,2016,Male
+2,Wexford,2016,Female
+14,Wexford,2017,Both sexes
+13,Wexford,2017,Male
+1,Wexford,2017,Female
+25,Wexford,2018,Both sexes
+17,Wexford,2018,Male
+8,Wexford,2018,Female
+22,Wexford,2019,Both sexes
+17,Wexford,2019,Male
+5,Wexford,2019,Female
+7,Wicklow,2013,Both sexes
+6,Wicklow,2013,Male
+1,Wicklow,2013,Female
+13,Wicklow,2014,Both sexes
+11,Wicklow,2014,Male
+2,Wicklow,2014,Female
+16,Wicklow,2015,Both sexes
+13,Wicklow,2015,Male
+3,Wicklow,2015,Female
+9,Wicklow,2016,Both sexes
+7,Wicklow,2016,Male
+2,Wicklow,2016,Female
+15,Wicklow,2017,Both sexes
+13,Wicklow,2017,Male
+2,Wicklow,2017,Female
+8,Wicklow,2018,Both sexes
+4,Wicklow,2018,Male
+4,Wicklow,2018,Female
+10,Wicklow,2019,Both sexes
+8,Wicklow,2019,Male
+2,Wicklow,2019,Female
+155,Munster,2013,Both sexes
+129,Munster,2013,Male
+26,Munster,2013,Female
+156,Munster,2014,Both sexes
+129,Munster,2014,Male
+27,Munster,2014,Female
+147,Munster,2015,Both sexes
+117,Munster,2015,Male
+30,Munster,2015,Female
+158,Munster,2016,Both sexes
+125,Munster,2016,Male
+33,Munster,2016,Female
+143,Munster,2017,Both sexes
+111,Munster,2017,Male
+32,Munster,2017,Female
+167,Munster,2018,Both sexes
+133,Munster,2018,Male
+34,Munster,2018,Female
+163,Munster,2019,Both sexes
+132,Munster,2019,Male
+31,Munster,2019,Female
+22,Clare,2013,Both sexes
+18,Clare,2013,Male
+4,Clare,2013,Female
+17,Clare,2014,Both sexes
+16,Clare,2014,Male
+1,Clare,2014,Female
+16,Clare,2015,Both sexes
+13,Clare,2015,Male
+3,Clare,2015,Female
+15,Clare,2016,Both sexes
+12,Clare,2016,Male
+3,Clare,2016,Female
+20,Clare,2017,Both sexes
+18,Clare,2017,Male
+2,Clare,2017,Female
+16,Clare,2018,Both sexes
+11,Clare,2018,Male
+5,Clare,2018,Female
+16,Clare,2019,Both sexes
+13,Clare,2019,Male
+3,Clare,2019,Female
+13,Cork City,2013,Both sexes
+10,Cork City,2013,Male
+3,Cork City,2013,Female
+16,Cork City,2014,Both sexes
+11,Cork City,2014,Male
+5,Cork City,2014,Female
+14,Cork City,2015,Both sexes
+13,Cork City,2015,Male
+1,Cork City,2015,Female
+24,Cork City,2016,Both sexes
+17,Cork City,2016,Male
+7,Cork City,2016,Female
+11,Cork City,2017,Both sexes
+10,Cork City,2017,Male
+1,Cork City,2017,Female
+16,Cork City,2018,Both sexes
+14,Cork City,2018,Male
+2,Cork City,2018,Female
+45,Cork City,2019,Both sexes
+39,Cork City,2019,Male
+6,Cork City,2019,Female
+43,Cork County,2013,Both sexes
+38,Cork County,2013,Male
+5,Cork County,2013,Female
+43,Cork County,2014,Both sexes
+35,Cork County,2014,Male
+8,Cork County,2014,Female
+45,Cork County,2015,Both sexes
+35,Cork County,2015,Male
+10,Cork County,2015,Female
+46,Cork County,2016,Both sexes
+35,Cork County,2016,Male
+11,Cork County,2016,Female
+40,Cork County,2017,Both sexes
+25,Cork County,2017,Male
+15,Cork County,2017,Female
+40,Cork County,2018,Both sexes
+33,Cork County,2018,Male
+7,Cork County,2018,Female
+20,Cork County,2019,Both sexes
+14,Cork County,2019,Male
+6,Cork County,2019,Female
+14,Kerry,2013,Both sexes
+12,Kerry,2013,Male
+2,Kerry,2013,Female
+24,Kerry,2014,Both sexes
+19,Kerry,2014,Male
+5,Kerry,2014,Female
+17,Kerry,2015,Both sexes
+14,Kerry,2015,Male
+3,Kerry,2015,Female
+21,Kerry,2016,Both sexes
+17,Kerry,2016,Male
+4,Kerry,2016,Female
+11,Kerry,2017,Both sexes
+7,Kerry,2017,Male
+4,Kerry,2017,Female
+25,Kerry,2018,Both sexes
+19,Kerry,2018,Male
+6,Kerry,2018,Female
+13,Kerry,2019,Both sexes
+11,Kerry,2019,Male
+2,Kerry,2019,Female
+16,Limerick City,2013,Both sexes
+12,Limerick City,2013,Male
+4,Limerick City,2013,Female
+15,Limerick City,2014,Both sexes
+11,Limerick City,2014,Male
+4,Limerick City,2014,Female
+6,Limerick City,2015,Both sexes
+3,Limerick City,2015,Male
+3,Limerick City,2015,Female
+6,Limerick City,2016,Both sexes
+5,Limerick City,2016,Male
+1,Limerick City,2016,Female
+7,Limerick City,2017,Both sexes
+6,Limerick City,2017,Male
+1,Limerick City,2017,Female
+9,Limerick City,2018,Both sexes
+8,Limerick City,2018,Male
+1,Limerick City,2018,Female
+17,Limerick City,2019,Both sexes
+13,Limerick City,2019,Male
+4,Limerick City,2019,Female
+13,Limerick County,2013,Both sexes
+9,Limerick County,2013,Male
+4,Limerick County,2013,Female
+9,Limerick County,2014,Both sexes
+7,Limerick County,2014,Male
+2,Limerick County,2014,Female
+19,Limerick County,2015,Both sexes
+14,Limerick County,2015,Male
+5,Limerick County,2015,Female
+12,Limerick County,2016,Both sexes
+9,Limerick County,2016,Male
+3,Limerick County,2016,Female
+20,Limerick County,2017,Both sexes
+16,Limerick County,2017,Male
+4,Limerick County,2017,Female
+21,Limerick County,2018,Both sexes
+17,Limerick County,2018,Male
+4,Limerick County,2018,Female
+45,Limerick County,2019,Both sexes
+39,Limerick County,2019,Male
+6,Limerick County,2019,Female
+15,North Tipperary,2013,Both sexes
+12,North Tipperary,2013,Male
+3,North Tipperary,2013,Female
+7,North Tipperary,2014,Both sexes
+7,North Tipperary,2014,Male
+0,North Tipperary,2014,Female
+8,North Tipperary,2015,Both sexes
+7,North Tipperary,2015,Male
+1,North Tipperary,2015,Female
+11,North Tipperary,2016,Both sexes
+9,North Tipperary,2016,Male
+2,North Tipperary,2016,Female
+12,North Tipperary,2017,Both sexes
+10,North Tipperary,2017,Male
+2,North Tipperary,2017,Female
+0,North Tipperary,2018,Both sexes
+0,North Tipperary,2018,Male
+0,North Tipperary,2018,Female
+0,North Tipperary,2019,Both sexes
+0,North Tipperary,2019,Male
+0,North Tipperary,2019,Female
+11,South Tipperary,2013,Both sexes
+10,South Tipperary,2013,Male
+1,South Tipperary,2013,Female
+12,South Tipperary,2014,Both sexes
+10,South Tipperary,2014,Male
+2,South Tipperary,2014,Female
+13,South Tipperary,2015,Both sexes
+9,South Tipperary,2015,Male
+4,South Tipperary,2015,Female
+10,South Tipperary,2016,Both sexes
+8,South Tipperary,2016,Male
+2,South Tipperary,2016,Female
+7,South Tipperary,2017,Both sexes
+7,South Tipperary,2017,Male
+0,South Tipperary,2017,Female
+0,South Tipperary,2018,Both sexes
+0,South Tipperary,2018,Male
+0,South Tipperary,2018,Female
+0,South Tipperary,2019,Both sexes
+0,South Tipperary,2019,Male
+0,South Tipperary,2019,Female
+2,Waterford City,2013,Both sexes
+2,Waterford City,2013,Male
+0,Waterford City,2013,Female
+1,Waterford City,2014,Both sexes
+1,Waterford City,2014,Male
+0,Waterford City,2014,Female
+3,Waterford City,2015,Both sexes
+3,Waterford City,2015,Male
+0,Waterford City,2015,Female
+3,Waterford City,2016,Both sexes
+3,Waterford City,2016,Male
+0,Waterford City,2016,Female
+4,Waterford City,2017,Both sexes
+3,Waterford City,2017,Male
+1,Waterford City,2017,Female
+4,Waterford City,2018,Both sexes
+3,Waterford City,2018,Male
+1,Waterford City,2018,Female
+4,Waterford City,2019,Both sexes
+4,Waterford City,2019,Male
+0,Waterford City,2019,Female
+6,Waterford County,2013,Both sexes
+6,Waterford County,2013,Male
+0,Waterford County,2013,Female
+12,Waterford County,2014,Both sexes
+12,Waterford County,2014,Male
+0,Waterford County,2014,Female
+6,Waterford County,2015,Both sexes
+6,Waterford County,2015,Male
+0,Waterford County,2015,Female
+10,Waterford County,2016,Both sexes
+10,Waterford County,2016,Male
+0,Waterford County,2016,Female
+11,Waterford County,2017,Both sexes
+9,Waterford County,2017,Male
+2,Waterford County,2017,Female
+10,Waterford County,2018,Both sexes
+9,Waterford County,2018,Male
+1,Waterford County,2018,Female
+7,Waterford County,2019,Both sexes
+6,Waterford County,2019,Male
+1,Waterford County,2019,Female
+63,Connacht,2013,Both sexes
+52,Connacht,2013,Male
+11,Connacht,2013,Female
+75,Connacht,2014,Both sexes
+60,Connacht,2014,Male
+15,Connacht,2014,Female
+60,Connacht,2015,Both sexes
+49,Connacht,2015,Male
+11,Connacht,2015,Female
+56,Connacht,2016,Both sexes
+48,Connacht,2016,Male
+8,Connacht,2016,Female
+46,Connacht,2017,Both sexes
+42,Connacht,2017,Male
+4,Connacht,2017,Female
+62,Connacht,2018,Both sexes
+44,Connacht,2018,Male
+18,Connacht,2018,Female
+58,Connacht,2019,Both sexes
+39,Connacht,2019,Male
+19,Connacht,2019,Female
+10,Galway City,2013,Both sexes
+7,Galway City,2013,Male
+3,Galway City,2013,Female
+11,Galway City,2014,Both sexes
+7,Galway City,2014,Male
+4,Galway City,2014,Female
+6,Galway City,2015,Both sexes
+5,Galway City,2015,Male
+1,Galway City,2015,Female
+8,Galway City,2016,Both sexes
+5,Galway City,2016,Male
+3,Galway City,2016,Female
+10,Galway City,2017,Both sexes
+9,Galway City,2017,Male
+1,Galway City,2017,Female
+11,Galway City,2018,Both sexes
+7,Galway City,2018,Male
+4,Galway City,2018,Female
+11,Galway City,2019,Both sexes
+6,Galway City,2019,Male
+5,Galway City,2019,Female
+21,Galway County,2013,Both sexes
+19,Galway County,2013,Male
+2,Galway County,2013,Female
+24,Galway County,2014,Both sexes
+21,Galway County,2014,Male
+3,Galway County,2014,Female
+22,Galway County,2015,Both sexes
+18,Galway County,2015,Male
+4,Galway County,2015,Female
+17,Galway County,2016,Both sexes
+15,Galway County,2016,Male
+2,Galway County,2016,Female
+16,Galway County,2017,Both sexes
+15,Galway County,2017,Male
+1,Galway County,2017,Female
+17,Galway County,2018,Both sexes
+11,Galway County,2018,Male
+6,Galway County,2018,Female
+17,Galway County,2019,Both sexes
+12,Galway County,2019,Male
+5,Galway County,2019,Female
+3,Leitrim,2013,Both sexes
+3,Leitrim,2013,Male
+0,Leitrim,2013,Female
+3,Leitrim,2014,Both sexes
+3,Leitrim,2014,Male
+0,Leitrim,2014,Female
+3,Leitrim,2015,Both sexes
+3,Leitrim,2015,Male
+0,Leitrim,2015,Female
+4,Leitrim,2016,Both sexes
+3,Leitrim,2016,Male
+1,Leitrim,2016,Female
+2,Leitrim,2017,Both sexes
+1,Leitrim,2017,Male
+1,Leitrim,2017,Female
+4,Leitrim,2018,Both sexes
+4,Leitrim,2018,Male
+0,Leitrim,2018,Female
+3,Leitrim,2019,Both sexes
+3,Leitrim,2019,Male
+0,Leitrim,2019,Female
+15,Mayo,2013,Both sexes
+11,Mayo,2013,Male
+4,Mayo,2013,Female
+19,Mayo,2014,Both sexes
+15,Mayo,2014,Male
+4,Mayo,2014,Female
+13,Mayo,2015,Both sexes
+10,Mayo,2015,Male
+3,Mayo,2015,Female
+13,Mayo,2016,Both sexes
+12,Mayo,2016,Male
+1,Mayo,2016,Female
+8,Mayo,2017,Both sexes
+8,Mayo,2017,Male
+0,Mayo,2017,Female
+15,Mayo,2018,Both sexes
+13,Mayo,2018,Male
+2,Mayo,2018,Female
+11,Mayo,2019,Both sexes
+9,Mayo,2019,Male
+2,Mayo,2019,Female
+9,Roscommon,2013,Both sexes
+8,Roscommon,2013,Male
+1,Roscommon,2013,Female
+12,Roscommon,2014,Both sexes
+10,Roscommon,2014,Male
+2,Roscommon,2014,Female
+10,Roscommon,2015,Both sexes
+10,Roscommon,2015,Male
+0,Roscommon,2015,Female
+7,Roscommon,2016,Both sexes
+6,Roscommon,2016,Male
+1,Roscommon,2016,Female
+4,Roscommon,2017,Both sexes
+4,Roscommon,2017,Male
+0,Roscommon,2017,Female
+9,Roscommon,2018,Both sexes
+4,Roscommon,2018,Male
+5,Roscommon,2018,Female
+11,Roscommon,2019,Both sexes
+5,Roscommon,2019,Male
+6,Roscommon,2019,Female
+5,Sligo,2013,Both sexes
+4,Sligo,2013,Male
+1,Sligo,2013,Female
+6,Sligo,2014,Both sexes
+4,Sligo,2014,Male
+2,Sligo,2014,Female
+6,Sligo,2015,Both sexes
+3,Sligo,2015,Male
+3,Sligo,2015,Female
+7,Sligo,2016,Both sexes
+7,Sligo,2016,Male
+0,Sligo,2016,Female
+6,Sligo,2017,Both sexes
+5,Sligo,2017,Male
+1,Sligo,2017,Female
+6,Sligo,2018,Both sexes
+5,Sligo,2018,Male
+1,Sligo,2018,Female
+5,Sligo,2019,Both sexes
+4,Sligo,2019,Male
+1,Sligo,2019,Female
+42,Ulster (part of),2013,Both sexes
+30,Ulster (part of),2013,Male
+12,Ulster (part of),2013,Female
+37,Ulster (part of),2014,Both sexes
+30,Ulster (part of),2014,Male
+7,Ulster (part of),2014,Female
+35,Ulster (part of),2015,Both sexes
+26,Ulster (part of),2015,Male
+9,Ulster (part of),2015,Female
+41,Ulster (part of),2016,Both sexes
+33,Ulster (part of),2016,Male
+8,Ulster (part of),2016,Female
+34,Ulster (part of),2017,Both sexes
+30,Ulster (part of),2017,Male
+4,Ulster (part of),2017,Female
+32,Ulster (part of),2018,Both sexes
+24,Ulster (part of),2018,Male
+8,Ulster (part of),2018,Female
+32,Ulster (part of),2019,Both sexes
+23,Ulster (part of),2019,Male
+9,Ulster (part of),2019,Female
+16,Cavan,2013,Both sexes
+11,Cavan,2013,Male
+5,Cavan,2013,Female
+12,Cavan,2014,Both sexes
+9,Cavan,2014,Male
+3,Cavan,2014,Female
+7,Cavan,2015,Both sexes
+6,Cavan,2015,Male
+1,Cavan,2015,Female
+15,Cavan,2016,Both sexes
+10,Cavan,2016,Male
+5,Cavan,2016,Female
+11,Cavan,2017,Both sexes
+10,Cavan,2017,Male
+1,Cavan,2017,Female
+14,Cavan,2018,Both sexes
+13,Cavan,2018,Male
+1,Cavan,2018,Female
+14,Cavan,2019,Both sexes
+11,Cavan,2019,Male
+3,Cavan,2019,Female
+18,Donegal,2013,Both sexes
+12,Donegal,2013,Male
+6,Donegal,2013,Female
+15,Donegal,2014,Both sexes
+12,Donegal,2014,Male
+3,Donegal,2014,Female
+23,Donegal,2015,Both sexes
+15,Donegal,2015,Male
+8,Donegal,2015,Female
+14,Donegal,2016,Both sexes
+12,Donegal,2016,Male
+2,Donegal,2016,Female
+14,Donegal,2017,Both sexes
+12,Donegal,2017,Male
+2,Donegal,2017,Female
+9,Donegal,2018,Both sexes
+6,Donegal,2018,Male
+3,Donegal,2018,Female
+11,Donegal,2019,Both sexes
+8,Donegal,2019,Male
+3,Donegal,2019,Female
+8,Monaghan,2013,Both sexes
+7,Monaghan,2013,Male
+1,Monaghan,2013,Female
+10,Monaghan,2014,Both sexes
+9,Monaghan,2014,Male
+1,Monaghan,2014,Female
+5,Monaghan,2015,Both sexes
+5,Monaghan,2015,Male
+0,Monaghan,2015,Female
+12,Monaghan,2016,Both sexes
+11,Monaghan,2016,Male
+1,Monaghan,2016,Female
+9,Monaghan,2017,Both sexes
+8,Monaghan,2017,Male
+1,Monaghan,2017,Female
+9,Monaghan,2018,Both sexes
+5,Monaghan,2018,Male
+4,Monaghan,2018,Female
+7,Monaghan,2019,Both sexes
+4,Monaghan,2019,Male
+3,Monaghan,2019,Female
+62,Border,2013,Both sexes
+47,Border,2013,Male
+15,Border,2013,Female
+57,Border,2014,Both sexes
+45,Border,2014,Male
+12,Border,2014,Female
+54,Border,2015,Both sexes
+40,Border,2015,Male
+14,Border,2015,Female
+62,Border,2016,Both sexes
+52,Border,2016,Male
+10,Border,2016,Female
+53,Border,2017,Both sexes
+46,Border,2017,Male
+7,Border,2017,Female
+42,Border,2018,Both sexes
+33,Border,2018,Male
+9,Border,2018,Female
+40,Border,2019,Both sexes
+30,Border,2019,Male
+10,Border,2019,Female
+29,Midland,2013,Both sexes
+26,Midland,2013,Male
+3,Midland,2013,Female
+22,Midland,2014,Both sexes
+21,Midland,2014,Male
+1,Midland,2014,Female
+27,Midland,2015,Both sexes
+23,Midland,2015,Male
+4,Midland,2015,Female
+38,Midland,2016,Both sexes
+32,Midland,2016,Male
+6,Midland,2016,Female
+25,Midland,2017,Both sexes
+19,Midland,2017,Male
+6,Midland,2017,Female
+29,Midland,2018,Both sexes
+24,Midland,2018,Male
+5,Midland,2018,Female
+23,Midland,2019,Both sexes
+17,Midland,2019,Male
+6,Midland,2019,Female
+55,West,2013,Both sexes
+45,West,2013,Male
+10,West,2013,Female
+66,West,2014,Both sexes
+53,West,2014,Male
+13,West,2014,Female
+51,West,2015,Both sexes
+43,West,2015,Male
+8,West,2015,Female
+45,West,2016,Both sexes
+38,West,2016,Male
+7,West,2016,Female
+38,West,2017,Both sexes
+36,West,2017,Male
+2,West,2017,Female
+30,West,2018,Both sexes
+25,West,2018,Male
+5,West,2018,Female
+50,West,2019,Both sexes
+32,West,2019,Male
+18,West,2019,Female
+101,Dublin,2013,Both sexes
+75,Dublin,2013,Male
+26,Dublin,2013,Female
+80,Dublin,2014,Both sexes
+64,Dublin,2014,Male
+16,Dublin,2014,Female
+51,Dublin,2015,Both sexes
+41,Dublin,2015,Male
+10,Dublin,2015,Female
+53,Dublin,2016,Both sexes
+33,Dublin,2016,Male
+20,Dublin,2016,Female
+44,Dublin,2017,Both sexes
+31,Dublin,2017,Male
+13,Dublin,2017,Female
+41,Dublin,2018,Both sexes
+29,Dublin,2018,Male
+12,Dublin,2018,Female
+47,Dublin,2019,Both sexes
+33,Dublin,2019,Male
+14,Dublin,2019,Female
+48,Mid-East,2013,Both sexes
+41,Mid-East,2013,Male
+7,Mid-East,2013,Female
+58,Mid-East,2014,Both sexes
+52,Mid-East,2014,Male
+6,Mid-East,2014,Female
+58,Mid-East,2015,Both sexes
+44,Mid-East,2015,Male
+14,Mid-East,2015,Female
+45,Mid-East,2016,Both sexes
+38,Mid-East,2016,Male
+7,Mid-East,2016,Female
+49,Mid-East,2017,Both sexes
+41,Mid-East,2017,Male
+8,Mid-East,2017,Female
+47,Mid-East,2018,Both sexes
+40,Mid-East,2018,Male
+7,Mid-East,2018,Female
+63,Mid-East,2019,Both sexes
+48,Mid-East,2019,Male
+15,Mid-East,2019,Female
+66,Mid-West,2013,Both sexes
+51,Mid-West,2013,Male
+15,Mid-West,2013,Female
+48,Mid-West,2014,Both sexes
+41,Mid-West,2014,Male
+7,Mid-West,2014,Female
+49,Mid-West,2015,Both sexes
+37,Mid-West,2015,Male
+12,Mid-West,2015,Female
+44,Mid-West,2016,Both sexes
+35,Mid-West,2016,Male
+9,Mid-West,2016,Female
+59,Mid-West,2017,Both sexes
+50,Mid-West,2017,Male
+9,Mid-West,2017,Female
+72,Mid-West,2018,Both sexes
+55,Mid-West,2018,Male
+17,Mid-West,2018,Female
+71,Mid-West,2019,Both sexes
+56,Mid-West,2019,Male
+15,Mid-West,2019,Female
+56,South-East,2013,Both sexes
+46,South-East,2013,Male
+10,South-East,2013,Female
+72,South-East,2014,Both sexes
+58,South-East,2014,Male
+14,South-East,2014,Female
+59,South-East,2015,Both sexes
+45,South-East,2015,Male
+14,South-East,2015,Female
+59,South-East,2016,Both sexes
+53,South-East,2016,Male
+6,South-East,2016,Female
+53,South-East,2017,Both sexes
+45,South-East,2017,Male
+8,South-East,2017,Female
+54,South-East,2018,Both sexes
+40,South-East,2018,Male
+14,South-East,2018,Female
+46,South-East,2019,Both sexes
+35,South-East,2019,Male
+11,South-East,2019,Female
+70,South-West,2013,Both sexes
+60,South-West,2013,Male
+10,South-West,2013,Female
+83,South-West,2014,Both sexes
+65,South-West,2014,Male
+18,South-West,2014,Female
+76,South-West,2015,Both sexes
+62,South-West,2015,Male
+14,South-West,2015,Female
+91,South-West,2016,Both sexes
+69,South-West,2016,Male
+22,South-West,2016,Female
+62,South-West,2017,Both sexes
+42,South-West,2017,Male
+20,South-West,2017,Female
+81,South-West,2018,Both sexes
+66,South-West,2018,Male
+15,South-West,2018,Female
+81,South-West,2019,Both sexes
+66,South-West,2019,Male
+15,South-West,2019,Female
