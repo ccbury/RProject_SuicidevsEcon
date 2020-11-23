@@ -1,4 +1,4 @@
-install.packages("tidyverse", "dplyr", "patchwork", "hrbrthemes")
+install.packages(c("tidyverse", "dplyr", "patchwork", "hrbrthemes"))
 
 library(ggplot2)
 library(dplyr)
@@ -13,7 +13,7 @@ coeff <- 1000
 
 
 # Read income from csv file.
-incomeOrig <- read.csv("income.csv")
+incomeOrig <- read.csv("csvFiles/CIA02.csv")
 # Change names of columns so that when pivot is performed they will be integers
 colnames(incomeOrig)[3]<-2013
 colnames(incomeOrig)[4]<-2014
@@ -38,23 +38,23 @@ incomePivot$Year <- as.integer(incomePivot$Year)
 # Read population from csv file
 # Create new set where population is divided by 100,000
 # This is for creating a suicide rate per 100,000 later
-population <- read.csv("population.csv")
-populationDivided <- population %>%
+population <- read.csv("csvFiles/CD108.csv")
+population <- population %>%
   mutate(Population = Population / 100000)
 
 
 # Read suicides from csv file
 # Remove all entried except those containing information on both Sexes
-suicides <- read.csv("VSD30.csv")
+suicides <- read.csv("csvFiles/VSD30.csv")
 maleSuicides <- suicides[apply(suicides,1,function(Sex){
   any(grepl("Male", Sex))}),]
-maleSuicidesCapita = merge(maleSuicides, populationDivided)
+maleSuicidesCapita = merge(maleSuicides, population)
 maleSuicidesCapita <- mutate(maleSuicidesCapita, Cases = Cases / Population)
 maleSuicidesCapita <- maleSuicidesCapita[, -c(4,5)]
 
 femaleSuicides <- suicides[apply(suicides,1,function(Sex){
   any(grepl("Female", Sex))}),]
-femaleSuicidesCapita = merge(femaleSuicides, populationDivided)
+femaleSuicidesCapita = merge(femaleSuicides, population)
 femaleSuicidesCapita <- mutate(femaleSuicidesCapita, Cases = Cases / Population)
 femaleSuicidesCapita <- femaleSuicidesCapita[, -c(4,5)]
 
@@ -62,108 +62,147 @@ suicides <- suicides[apply(suicides,1,function(Sex){
   any(grepl("Both sexes", Sex))}),]
 
 # Create suicidesCapita by merging population
-# This adds populationDivided so that we can get suicides per 100,000 people
-suicidesCapita = merge(suicides, populationDivided)
+# This adds population so that we can get suicides per 100,000 people
+suicidesCapita = merge(suicides, population)
 suicidesCapita <- mutate(suicidesCapita, Cases = Cases / Population)
 suicidesCapita <- suicidesCapita[, -c(4,5)]
 
+# Graph that compares suicide rates to population by county
+options(scipen=5)
+populationSuicideCapita = merge(suicidesCapita, population)
+populationVsSuicide = populationSuicideCapita %>%
+  unite(YearArea, c(Area, Year),sep=" ", remove=FALSE)
+populationVsSuicide <- populationVsSuicide[apply(populationVsSuicide,1,function(YearArea){
+  !any(grepl("Leinster", YearArea))}),]
+populationVsSuicide <- populationVsSuicide[apply(populationVsSuicide,1,function(YearArea){
+  !any(grepl("Connacht", YearArea))}),]
+populationVsSuicide <- populationVsSuicide[apply(populationVsSuicide,1,function(YearArea){
+  !any(grepl("Munster", YearArea))}),]
+populationVsSuicide <- populationVsSuicide[apply(populationVsSuicide,1,function(YearArea){
+  !any(grepl("State", YearArea))}),]
+populationVsSuicide <- populationVsSuicide %>%
+  mutate(Population = Population * 100000)
+
+ggplot(head(populationVsSuicide ,200), aes(x=reorder(YearArea, -Population))) +
+  geom_col(aes(y=Population), color="red",fill=casesColor, alpha=.6, size =.1) +
+  geom_col(aes(y=Cases*33333), color="blue",fill=incomeColor, alpha=.6, size =.1) +
+  scale_y_continuous(
+    name = ("Population"),
+    sec.axis = sec_axis(~./33333,name="Suicide Cases per 100,000")) +
+  ggtitle("Suicide per 100,000 vs Population (County & Year)")+
+  xlab("Year & Area")+
+  theme_ipsum() +
+  theme(
+    axis.title.y = element_text(color = casesColor, size=13, face ="bold"),
+    axis.title.y.right = element_text(color = incomeColor, size=13, face ="bold"),
+    axis.text.x = element_text(angle=60,hjust=1, size=8),
+    axis.title.x = element_text(size=13, color="gray", face ="bold"))
 # This final Merge compiles incomePivot and SuicidesCapita so that graphing is possible
 incomeCasesGraph <- merge(incomePivot, suicidesCapita)
 incomeCasesGraph.combined = incomeCasesGraph %>%
   unite(YearArea, c(Area, Year),sep=" ", remove=FALSE)
-ggplot(head(incomeCasesGraph.combined, 80), aes(x=YearArea)) +
+ggplot(head(incomeCasesGraph.combined,200), aes(x=YearArea)) +
   geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =.1) +
   geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =.1) +
   scale_y_continuous(
-    name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
-  ggtitle("Suicide per 100,000 vs Income per Person by County & Year")+
+    name = ("Average Income per Person (Euro)"),
+    sec.axis = sec_axis(~./coeff,name="SuicideCases per 100,000")) +
+  ggtitle("Suicide per 100,000 vs Income per Person (County & Year)")+
+  xlab("Year & Area")+
   theme_ipsum() +
   theme(
     axis.title.y = element_text(color = incomeColor, size=13, face ="bold"),
     axis.title.y.right = element_text(color = casesColor, size=13, face ="bold"),
     axis.text.x = element_text(angle=60,hjust=1, size=8),
     axis.title.x = element_text(size=13, color="gray", face ="bold"))
-# This graph is the same except it shows the bar in descending order of income per person. rather than by county and year
-ggplot(head(incomeCasesGraph.combined, 80), aes(x=reorder(YearArea, -Income))) +
-  geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =.1) +
-  geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =.1) +
+
+# Same as descending except line graph instead of col graph
+ggplot(head(incomeCasesGraph.combined, 200),aes(x=reorder(YearArea, -Income))) +
+  geom_line(aes(y=Income), color="blue",group =1, alpha=.6, size =1) +
+  geom_line(aes(y=Cases*coeff), color="red",group=2, alpha=.6, size =1) +
   scale_y_continuous(
-    name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
-  ggtitle("Suicide / 100,000 vs Income / Person (County & Year), Descending Income")+
+    name = ("Average Income per Person (Euro)"),
+    sec.axis = sec_axis(~./coeff,name="Suicide Cases per 100,000")) +
+  ggtitle("Suicide per 100,000 vs Income per Person (County & Year), Descending Income")+
+  xlab("Year & Area")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = incomeColor, size=13),
-    axis.title.y.right = element_text(color = casesColor, size=13),
+    axis.title.y = element_text(color = incomeColor, size=13,face="bold"),
+    axis.title.y.right = element_text(color = casesColor, size=13,face="bold"),
     axis.text.x = element_text(angle=60,hjust=1, size=8),
-    axis.title.x = element_text(size=13, color="gray"))
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
+
 # Plot same graph for Male cases only
 maleIncomeCasesGraph <- merge(incomePivot, maleSuicidesCapita)
 maleIncomeCasesGraph.combined = maleIncomeCasesGraph %>%
   unite(YearArea, c(Area, Year),sep=" ", remove=FALSE)
-ggplot(head(maleIncomeCasesGraph.combined, 80), aes(x=YearArea)) +
+maleGraph <- ggplot(head(maleIncomeCasesGraph.combined, 200), aes(x=YearArea)) +
   geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =.1) +
   geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =.1) +
   scale_y_continuous(
     name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
-  ggtitle("Male Suicide / 100,000 vs Income per Person by County & Year")+
+    sec.axis = sec_axis(~./coeff,name="Suicide Cases per 100,000")) +
+  ggtitle("Male Suicide per 100,000 vs Average Income (County & Year)")+
+  xlab("Year & Area")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = incomeColor, size=13),
-    axis.title.y.right = element_text(color = casesColor, size=13),
+    axis.title.y = element_text(color = incomeColor, size=13,face="bold"),
+    axis.title.y.right = element_text(color = casesColor, size=13,face="bold"),
     axis.text.x = element_text(angle=60,hjust=1, size=8),
-    axis.title.x = element_text(size=13, color="gray"))
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
 # Plot same graph for female cases only
 femaleIncomeCasesGraph <- merge(incomePivot, femaleSuicidesCapita)
 femaleIncomeCasesGraph.combined = femaleIncomeCasesGraph %>%
   unite(YearArea, c(Area, Year),sep=" ", remove=FALSE)
-ggplot(head(femaleIncomeCasesGraph.combined, 80), aes(x=YearArea)) +
+femaleGraph <- ggplot(head(femaleIncomeCasesGraph.combined, 105), aes(x=YearArea)) +
   geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =.1) +
   geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =.1) +
   scale_y_continuous(
     name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
-  ggtitle("Female Suicide / 100,000 vs Income per Person by County & Year")+
+    sec.axis = sec_axis(~./coeff,name="Suicide Cases per 100,000")) +
+  ggtitle("Female Suicide per 100,000 vs Average Income (County & Year)")+
+  xlab("Year & Area")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = incomeColor, size=13),
-    axis.title.y.right = element_text(color = casesColor, size=13),
+    axis.title.y = element_text(color = incomeColor, size=13,face="bold"),
+    axis.title.y.right = element_text(color = casesColor, size=13,face="bold"),
     axis.text.x = element_text(angle=60,hjust=1, size=8),
-    axis.title.x = element_text(size=13, color="gray"))
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
+
+# Print male and female graphs
+maleGraph + femaleGraph
 
 
+#Disposable income
 incomeSelfEmployed <- incomeOrig[apply(incomeOrig,1,function(Type){
   any(grepl("Primary Income", Type))}),]
-
 
 incomeSelfPivot <- incomeSelfEmployed %>%
   pivot_longer(-c(Type, Area),
                names_to = "Year",
                values_to = "Income")
 incomeSelfPivot$Year <- as.integer(incomeSelfPivot$Year)
-
 selfIncomeCases <- merge(incomeSelfPivot, suicidesCapita)
 selfIncomeCases.combined = selfIncomeCases %>%
   unite(YearArea, c(Area, Year),sep=" ", remove=FALSE)
-
 selfIncomeCases.combined <- selfIncomeCases.combined[apply(selfIncomeCases.combined,1,function(Area){
   !any(grepl("Dublin", Area))}),]
-
-ggplot(head(selfIncomeCases.combined, 80),  aes(x=reorder(YearArea, -Income))) +
-  geom_col(aes(y=Income), color="red",fill=casesColor, alpha=.6, size =.1) +
-  geom_col(aes(y=Cases*200), color="blue",fill=incomeColor, alpha=.6, size =.1) +
+selfIncomeCases.combined <- selfIncomeCases.combined[apply(selfIncomeCases.combined,1,function(Area){
+  !any(grepl("State", Area))}),]
+ggplot(head(selfIncomeCases.combined, 200),  aes(x=reorder(YearArea, -Income))) +
+  geom_line(aes(y=Income), color="red",group=1,fill=casesColor, alpha=.6, size =1) +
+  geom_line(aes(y=Cases*200), color="blue",group=2,fill=incomeColor, alpha=.6, size =1) +
   scale_y_continuous(
-    name = ("Disposable Income per Person (Euro)"),
-    sec.axis = sec_axis(~./200, name="Cases per 100,000")) +
-  ggtitle("Disposable Income per Person (Euro) vs Suicide Cases per 100,000")+
+    name = ("Disposable Income (Euro)"),
+    sec.axis = sec_axis(~./200, name="Suicide Cases per 100,000")) +
+  ggtitle("Disposable Income (Euro) vs Suicide Cases per 100,000")+
+  xlab("Year & Area")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = casesColor, size=13),
-    axis.title.y.right = element_text(color = incomeColor, size=13),
+    axis.title.y = element_text(color = casesColor, size=13,face="bold"),
+    axis.title.y.right = element_text(color = incomeColor, size=13,face="bold"),
     axis.text.x = element_text(angle=60,hjust=1, size=8),
-    axis.title.x = element_text(size=13, color="gray"))
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
 
 
 View(selfIncomeCases.combined)
@@ -180,76 +219,87 @@ sci.x2015 <- sci[sci$Year == 2015,]
 sci.x2016 <- sci[sci$Year == 2016,]
 sci.x2017 <- sci[sci$Year == 2017,]
 # plotting graphs for 2017 to 2013 individually
-ggplot(head(sci.x2017, 80), aes(x=Area)) +
+x2013Graph <- ggplot(head(sci.x2017, 105), aes(x=Area)) +
   geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =1) +
   geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =1) +
   scale_y_continuous(
     name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
+    sec.axis = sec_axis(~./coeff,name="Suicide Cases per 100,000")) +
   ggtitle("Suicide per 100,000 vs Income per Person (2017)")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = incomeColor, size=13),
-    axis.title.y.right = element_text(color = casesColor, size=13))
-ggplot(head(sci.x2016, 80), aes(x=Area)) +
+    axis.title.y = element_text(color = incomeColor, size=13,face="bold"),
+    axis.text.x = element_text(angle=60,hjust=1, size=8),
+    axis.title.y.right = element_text(color = casesColor, size=13,face="bold"),
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
+x2014Graph <- ggplot(head(sci.x2016, 105), aes(x=Area)) +
   geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =1) +
   geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =1) +
   scale_y_continuous(
     name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
+    sec.axis = sec_axis(~./coeff,name="Suicide Cases per 100,000")) +
   ggtitle("Suicide per 100,000 vs Income per Person (2016)")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = incomeColor, size=13),
-    axis.title.y.right = element_text(color = casesColor, size=13))
-ggplot(head(sci.x2015, 80), aes(x=Area)) +
+    axis.title.y = element_text(color = incomeColor, size=13,face="bold"),
+    axis.text.x = element_text(angle=60,hjust=1, size=8),
+    axis.title.y.right = element_text(color = casesColor, size=13,face="bold"),
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
+x2015Graph <- ggplot(head(sci.x2015, 80), aes(x=Area)) +
   geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =1) +
   geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =1) +
   scale_y_continuous(
     name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
+    sec.axis = sec_axis(~./coeff,name="Suicide Cases per 100,000")) +
   ggtitle("Suicide per 100,000 vs Income per Person (2015)")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = incomeColor, size=13),
-    axis.title.y.right = element_text(color = casesColor, size=13))
-ggplot(head(sci.x2014, 80), aes(x=Area)) +
+    axis.title.y = element_text(color = incomeColor, size=13,face="bold"),
+    axis.text.x = element_text(angle=60,hjust=1, size=8),
+    axis.title.y.right = element_text(color = casesColor, size=13,face="bold"),
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
+x2016Graph <- ggplot(head(sci.x2014, 80), aes(x=Area)) +
   geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =1) +
   geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =1) +
   scale_y_continuous(
     name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
+    sec.axis = sec_axis(~./coeff,name="Suicide Cases per 100,000")) +
   ggtitle("Suicide per 100,000 vs Income per Person (2014)")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = incomeColor, size=13),
-    axis.title.y.right = element_text(color = casesColor, size=13))
-ggplot(head(sci.x2013, 80), aes(x=Area)) +
+    axis.title.y = element_text(color = incomeColor, size=13,face="bold"),
+    axis.text.x = element_text(angle=60,hjust=1, size=8),
+    axis.title.y.right = element_text(color = casesColor, size=13,face="bold"),
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
+x2017Graph <- ggplot(head(sci.x2013, 80), aes(x=Area)) +
   geom_col(aes(y=Income), color="blue",fill=incomeColor, alpha=.6, size =1) +
   geom_col(aes(y=Cases*coeff), color="red",fill=casesColor, alpha=.6, size =1) +
   scale_y_continuous(
     name = ("Income per Person (Euro)"),
-    sec.axis = sec_axis(~./coeff,name="Cases per 100,000")) +
+    sec.axis = sec_axis(~./coeff,name="Suicide Cases per 100,000")) +
   ggtitle("Suicide per 100,000 vs Income per Person (2013)")+
   theme_ipsum() +
   theme(
-    axis.title.y = element_text(color = incomeColor, size=13),
-    axis.title.y.right = element_text(color = casesColor, size=13))
+    axis.title.y = element_text(color = incomeColor, size=13,face="bold"),
+    axis.text.x = element_text(angle=60,hjust=1, size=8),
+    axis.title.y.right = element_text(color = casesColor, size=13,face="bold"),
+    axis.title.x = element_text(size=13, color="gray",face="bold"))
+
+x2013Graph + x2014Graph + x2015Graph + x2016Graph +x2017Graph
 
 #Views for all data sets used
-View(incomeOrig)
-View(income)
-View(incomeSelfEmployed)
-View(suicides)
-View(maleSuicides)
-View(femaleSuicides)
-View(population)
+#View(incomeOrig)
+#View(income)
+#View(incomeSelfEmployed)
+#View(suicides)
+#View(maleSuicides)
+#View(femaleSuicides)
+#View(population)
 
-View(incomePivot)
-View(incomeSelfPivot)
-View(suicidesCapita)
-View(maleSuicidesCapita)
-View(femaleSuicidesCapita)
-View(populationDivided)
-View(sci)
-View(sci.combined)
+#View(incomePivot)
+#View(incomeSelfPivot)
+#View(suicidesCapita)
+#View(maleSuicidesCapita)
+#View(femaleSuicidesCapita)
+#View(sci)
+#View(sci.combined)
